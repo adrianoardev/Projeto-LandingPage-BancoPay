@@ -7,51 +7,133 @@
 body {
   background: #fafafa;
   font-family: 'Roboto', sans-serif;
+  width: auto;
+  height: auto;
 }
 
-#title {
-  color: #FFF;
-  font-size: 36px;
-  align-items: center;
-}
-
-header {
-  background: #11c76f;
+.container-topo {
+  background: #11c767; 
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
+  justify-content: space-between;  
+  padding: 0px 30px;
+  margin-bottom: 30px;
 }
 
-li {
-  display: inline;
-  margin: 20px;    
-}
-
-li a {
-  text-decoration: none;
+.titulo-principal h1 {
+  display: flex;
   color: #fff;
-  font-size: 18px;
+  font-size: 38px;
+  letter-spacing: 1px; 
+  height: 80px;
 }
 
-a:hover {
+.titulo-principal h1 {
+  align-items: center;
+}
+
+.menu-navegacao {
+  display: flex;  
+  align-items: center; /* alinha o menu ao centro da div */
+}
+
+.menu-navegacao ul li {
+  display: inline;
+  margin: 20px;  
+}
+
+.menu-navegacao ul li a {
+  text-decoration: none; 
+  color: #fff; 
+  font-size: 18px;  
+}
+
+.menu-navegacao ul li a:hover {
   color: #ddd;
 }
 
-#btn a {
-  color: #FFF;
+#btn a, #btn {
+  color: #fff;
 }
 
 #btn {
-  border: 1px solid #5769d1;
+  font-size: 18px
+}
+
+#btn {
+  border: none;
   border-radius: 20px;
   padding: 10px 20px;
   background: #5769d1;
-  transition: background-color 1s;
+  transition: background-color 0.5s;
 }
 
 #btn:hover {  
   background: #365ad6;
   cursor: pointer;
 }
+
+.container-main {
+  display: flex;
+  align-items: center;
+  background-color: #5769d1;  
+}
+
+.container {  
+  width: 46%;
+}
+
+.container-titulo h2 {    
+  font-size: 55px;  
+}
+
+.texto-bancopay p {
+  font-size: 18px;
+  color: rgba(43, 43, 43, 0.747);  
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.cadastro {
+  background: #11c767;
+  width: 60%;
+  height: 250px;
+  margin-top: 20px; 
+  border: none;
+  border-radius: 10px;   
+}
+
+.cadastro h2 {
+  color: #fff;
+  text-align: center; 
+  padding: 15px;  
+}
+
+form {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;      
+}
+
+input {  
+  margin: 10px;  
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  width: 80%;  
+}
+
+.container-cartao {
+  display: flex;
+  align-items: center;
+}
+
+.foto-cartao img {
+  width: 400px;
+  height: 400px;
+  align-items: center;
+  background: red;
+}
+
 
