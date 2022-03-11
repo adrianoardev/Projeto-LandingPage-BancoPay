@@ -2,21 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
   background: #fafafa;
-  font-family: 'Roboto', sans-serif;
-  height:100%;
-	width:100%;
-	margin:auto;
 }
 
 .container-topo {
   background: #11c767; 
   display: flex;
   justify-content: space-between; 
-  padding: 0 50px;
+  padding: 0 30px;  
 }
 
 .titulo-principal h1 {
@@ -38,7 +35,7 @@ body {
 
 .menu-navegacao ul li {
   display: inline;
-  margin: 20px;  
+  margin-left: 30px;  
 }
 
 .menu-navegacao ul li a {
@@ -52,11 +49,11 @@ body {
 }
 
 #btn a, #btn-cartao {
-  color: #fff;
+  color: #fff;  
 }
 
 #btn, #btn-cartao {
-  font-size: 18px
+  font-size: 18px;
 }
 
 #btn, #btn-cartao {
@@ -67,7 +64,7 @@ body {
   transition: background-color 0.5s;
 }
 
-#btn, #btn-cartao:hover {  
+#btn:hover, #btn-cartao:hover {  
   background: #365ad6;
   cursor: pointer;
 }
@@ -75,9 +72,11 @@ body {
 .container-main {  
   display: flex;
   justify-content: space-between;  
-  background: #eff0e8;
-  padding-top: 30px;
-  padding-bottom: 30px; 
+  align-items: center;  
+  width: 100%;
+  height: calc(100vh - 80px);
+  padding-top: 20px;
+  background: #eff0e8;  
 }
 
 .cadastro h2 {
@@ -131,7 +130,14 @@ body {
   width: 50%;
 }
 
-.img-foto-cartao {  
+.foto-cartao {
+  display: flex;
+  align-items: center;
+}
+
+.img-foto-cartao { 
+  display: flex;
+  justify-content: center;   
   background: #d4d6c9; 
   width: 600px;
   height: 470px;
@@ -143,4 +149,24 @@ body {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;  
+}
+
+.beneficios {
+  background: yellow;
+  height: 200px;  
+  }
+
+.beneficios-cartao {
+  display: flex;
+  flex-direction: column;  
+
+}
+
+.texto1 span{
+  color: #50d6a1;
+  
+}
+
+.texto1 {
+  color: #000;
 }
