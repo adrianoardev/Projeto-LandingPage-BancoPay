@@ -170,3 +170,27 @@ body {
 .texto1 {
   color: #000;
 }
+
+.imagens-banco-pay {  
+  height: 200px;
+}
+
+.imagens-banco-pay {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;  
+}
+
+.img-pay {
+  max-width: 100%;
+  width: 220px;  
+  object-fit: contain;    
+}
+
+/* CONTINUAR AQUI */
+.img-banco-pay p {  
+  padding-top: 5px;
+  text-align: center;
+  font-size: 16px;
+  color: rgba(43, 43, 43, 0.747); 
+}
