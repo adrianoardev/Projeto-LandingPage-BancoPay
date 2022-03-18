@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -10,17 +10,17 @@ body {
 }
 
 .container-topo {
-  background: #11c767; 
+  background: #11c767;
   display: flex;
-  justify-content: space-between; 
-  padding: 0 30px;  
+  justify-content: space-between;
+  padding: 0 30px;
 }
 
 .titulo-principal h1 {
   display: flex;
   color: #fff;
   font-size: 38px;
-  letter-spacing: 1px; 
+  letter-spacing: 1px;
   height: 80px;
 }
 
@@ -29,34 +29,37 @@ body {
 }
 
 .menu-navegacao {
-  display: flex;  
+  display: flex;
   align-items: center; /* alinha o menu ao centro da div */
 }
 
 .menu-navegacao ul li {
   display: inline;
-  margin-left: 30px;  
+  margin-left: 30px;
 }
 
 .menu-navegacao ul li a {
-  text-decoration: none; 
-  color: #fff; 
-  font-size: 18px;  
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
 }
 
 .menu-navegacao ul li a:hover {
   color: #d4d6c9;
 }
 
-#btn a, #btn-cartao {
-  color: #fff;  
+#btn a,
+#btn-cartao {
+  color: #fff;
 }
 
-#btn, #btn-cartao {
+#btn,
+#btn-cartao {
   font-size: 18px;
 }
 
-#btn, #btn-cartao {
+#btn,
+#btn-cartao {
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
@@ -64,19 +67,20 @@ body {
   transition: background-color 0.5s;
 }
 
-#btn:hover, #btn-cartao:hover {  
+#btn:hover,
+#btn-cartao:hover {
   background: #365ad6;
   cursor: pointer;
 }
 
-.container-main {  
+.container-main {
   display: flex;
-  justify-content: space-between;  
-  align-items: center;  
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: calc(100vh - 80px);
   padding-top: 20px;
-  background: #eff0e8;  
+  background: #eff0e8;
 }
 
 .cadastro h2 {
@@ -86,13 +90,13 @@ body {
 
 .cadastro p {
   font-size: 18px;
-  color: rgba(43, 43, 43, 0.747);  
+  color: rgba(43, 43, 43, 0.747);
   line-height: 1.5;
-  margin-top: 20px;  
+  margin-top: 20px;
 }
 
-.cadastro {  
-  width: 46%;  
+.cadastro {
+  width: 46%;
 }
 
 .cadastro-cartao {
@@ -106,24 +110,23 @@ body {
 .cadastro-cartao h2 {
   font-size: 36px;
   color: #fff;
-  text-align: center; 
+  text-align: center;
   padding: 15px;
 }
 
 .cadastro-cartao form {
   display: flex;
-  text-align: center;
   flex-direction: column;
-  align-items: center;           
+  align-items: center;
 }
 
 .cadastro-cartao input {
-  margin: 10px;  
+  margin: 10px;
   padding: 10px;
   border-radius: 10px;
   border: none;
-  font-size: 14px; 
-  width: 70%;  
+  font-size: 14px;
+  width: 70%;
 }
 
 #btn-cartao {
@@ -135,62 +138,98 @@ body {
   align-items: center;
 }
 
-.img-foto-cartao { 
+.img-foto-cartao {
   display: flex;
-  justify-content: center;   
-  background: #d4d6c9; 
+  justify-content: center;
+  background: #d4d6c9;
   width: 600px;
   height: 470px;
   border: none;
-  border-radius: 10px;  
+  border-radius: 10px;
 }
 
-.img { 
+.img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;  
+  object-fit: contain;
 }
 
+/* SECTION BENEFICIOS */
 .beneficios {
-  background: yellow;
-  height: 200px;  
-  }
+  background: #fafafa;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .beneficios-cartao {
-  display: flex;
-  flex-direction: column;  
-
+  text-align: center;
 }
 
-.texto1 span{
+.beneficios-cartao h2 {
+  color: #223324;
+  font-size: 28px;
+}
+
+.beneficios-cartao p {
+  padding: 0 0 60px 0;
+}
+
+.beneficios-cartao p span {
   color: #50d6a1;
-  
+  margin: 15px;
+  border-bottom: 2px solid #223324;
+  padding: 10px;
 }
 
-.texto1 {
-  color: #000;
-}
-
-.imagens-banco-pay {  
-  height: 200px;
-}
-
+/*Section de Imagens*/
 .imagens-banco-pay {
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  padding: 0 30px;  
+  height: auto;
+  background: #eff0e8;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.img-banco-pay {
+  margin: 35px;
+}
+
+.texto-banco-pay {
+  text-align: center;
+  background: #eff0e8;
+}
+
+.texto-banco-pay h2 {
+  color: #11c767;
+  font-size: 28px;
+  padding: 60px 0 30px 0;
+}
+
+.texto-banco-pay p {
+  padding-bottom: 30px;
 }
 
 .img-pay {
-  max-width: 100%;
-  width: 220px;  
-  object-fit: contain;    
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
 }
 
-/* CONTINUAR AQUI */
-.img-banco-pay p {  
+.img-banco-pay p {
   padding-top: 5px;
   text-align: center;
   font-size: 16px;
-  color: rgba(43, 43, 43, 0.747); 
+  color: rgba(43, 43, 43, 0.747);
+}
+
+.img-pay-texto {
+  width: 200px;
+  height: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  color: rgba(43, 43, 43, 0.747);
 }
